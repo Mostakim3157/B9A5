@@ -21,57 +21,103 @@
         .font-raleway {
             font-family: "Raleway", sans-serif;
         }
-
     </style>
 </head>
 
-<body class=".font-raleway" >
+<body class=".font-raleway">
 
     <header class="max-w-[420px] md:max-w-[1173px] mx-auto mt-5">
         <!-- navbar starts -->
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
-                  <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Item 1</a></li>
+                            <li><a>Item 2</a></li>
+                            <li><a>Item 3</a></li>
+                            <li><a>Item 4</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                      <li><a>Item 1</a></li>
-                      <li><a>Item 2</a></li>
-                      <li><a>Item 3</a></li>
-                      <li><a>Item 4</a></li>
-                    </ul>
-                  </div>
-                  <a class="text-4xl font-bold ">E-Ticket</a>
+                    <a class="text-4xl font-bold ">E-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li class="text-lg font-medium"><a>Home</a></li>
-                    <li class="text-lg font-medium"><a>About</a></li>
-                    <li class="text-lg font-medium"><a>Destination</a></li>
-                    <li class="text-lg font-medium"><a>Search</a></li>
-                  </ul>
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="text-lg font-medium"><a>Home</a></li>
+                        <li class="text-lg font-medium"><a>About</a></li>
+                        <li class="text-lg font-medium"><a>Destination</a></li>
+                        <li class="text-lg font-medium"><a>Search</a></li>
+                    </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn  text-xl text-[#67E053] bg-[#E8FAE5] border-[#67E053] px-8">Bus <img src="./images/bus-icon.png" alt=""></a>
+                    <a class="btn  text-xl text-[#67E053] bg-[#E8FAE5] border-[#67E053] px-8">Bus <img
+                            src="./images/bus-icon.png" alt=""></a>
                 </div>
-              </div>
+            </div>
         </nav>
 
         <!-- banner section starts -->
         <section>
-            <div class="bg-[url(./images/banner.png)] md:min-h-[550px] bg-no-repeat mt-5 text-center">
-                <h1 class="pt-20 text-6xl font-extrabold text-white">End-to-End Travel with</h1>
+            <div class="bg-[url(./images/banner.png)] md:min-h-[550px] bg-no-repeat mt-5 text-center rounded-3xl ">
+                <h1 class="pt-10 md:pt-20 text-6xl font-extrabold text-white">End-to-End Travel with</h1>
                 <h1 class="pt-10 text-6xl font-bold text-green-500"> E Paribahan</h1>
-                 <p class="py-6 text-lg text-white w-3/5 mx-auto">Embark on a seamless journey from start to finish with e paribahan - your trusted companion for end-to-end travel solutions.</p>
-            <button class="btn text-xl font-bold bg-green-500 border-none">Buy Tickets </button>
+                <p class="py-6 text-lg text-white w-3/5 mx-auto">Embark on a seamless journey from start to finish with
+                    e paribahan - your trusted companion for end-to-end travel solutions.</p>
+                <button class="btn text-xl font-bold bg-green-500 border-none mb-10 md:mb-0">Buy Tickets </button>
 
             </div>
         </section>
 
         <!-- offer section starts  -->
         <section>
+
+            <div class="my-32">
+                <h3 class="text-5xl text-center font-bold pb-14">Best offers for you</h3>
+                <div class="flex flex-col gap-6 md:gap-0 md:flex-row justify-between font-inter">
+
+                    <!-- coupon 1 -->
+                    <div class="bg-[#FFBF0F] flex justify-between rounded-3xl">
+                        <div class="p-12">
+                            <h3 class="text-4xl font-extrabold">15%OFF</h3>
+                            <p class="font-bold py-2">on your next purchase</p>
+                            <p class="text-gray-700">use by January 2024</p>
+                        </div>
+                        <div class="p-12 flex flex-col justify-center items-center">
+                            <h3 class="text-3xl font-extrabold pb-1">NEW15</h3>
+                            <hr class="w-full border-dotted border-[#8f8f8fce]">
+                            <p class="text-gray-700">Coupon Code</p>
+                        </div>
+                    </div>
+                    <!-- coupon 2 -->
+                    <div class="bg-[#F78C9C] flex justify-between rounded-3xl">
+                        <div class="p-12">
+                            <h3 class="text-4xl font-extrabold">20%OFF</h3>
+                            <p class="font-bold py-2">on your next purchase</p>
+                            <p class="text-gray-700">use by January 2024</p>
+                        </div>
+                        <div class="p-12 flex flex-col justify-center items-center">
+                            <h3 class="text-3xl font-extrabold pb-1">Couple 20</h3>
+                            <hr class="w-full border-dotted border-[#8f8f8fce]">
+                            <p class="text-gray-700">Coupon Code</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+                <div class="text-center mt-14 ">
+                    <button class="btn bg-white border-green-500 text-green-500 font-bold text-xl">Sell All
+                        Orders</button>
+                    </div>
+            </div>
 
         </section>
     </header>
