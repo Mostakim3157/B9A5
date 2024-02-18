@@ -422,10 +422,7 @@ document
   .getElementById("seat-number-b4")
   .addEventListener("click", preventDoubleClickB4);
 
-
-
-
-  // coupon part starts
+// coupon part starts
 const couponApply = document.getElementById("coupon-apply");
 
 couponApply.addEventListener("click", function disappearApply() {
@@ -448,6 +445,12 @@ couponApply.addEventListener("click", function disappearApply() {
       // hide the input field
 
       couponField.classList.add("hidden");
+
+      // give discount amount
+      const discountField = document.getElementById("discount-amount");
+      const discountText = document.createElement("p");
+      discountText.textContent = "(-) Off 15% ";
+      discountField.appendChild(discountText);
     }
     if (couponCode === "Couple 20") {
       // give the discount
@@ -462,8 +465,13 @@ couponApply.addEventListener("click", function disappearApply() {
       // hide the input field
 
       couponField.classList.add("hidden");
-    }
 
+      // give discount amount
+      const discountField = document.getElementById("discount-amount");
+      const discountText = document.createElement("p");
+      discountText.textContent = "(-) Off 20% ";
+      discountField.appendChild(discountText);
+    }
   } else {
     // give invalid message
     const invalidCouponField = document.getElementById("invalid-coupon");
@@ -471,7 +479,31 @@ couponApply.addEventListener("click", function disappearApply() {
     invalidCoupon.textContent = "*Invalid Coupon";
     invalidCouponField.appendChild(invalidCoupon);
     document
-    .getElementById("coupon-apply")
-    .removeEventListener("click", disappearApply);
+      .getElementById("coupon-apply")
+      .removeEventListener("click", disappearApply);
   }
 });
+
+// utility
+function setBackgroundColorById(elementId) {
+  const element = document.getElementById(elementId);
+  element.classList.add("bg-green-400");
+}
+
+function getElementValueById(elementId) {
+  const element = document.getElementById(elementId);
+  const elementText = element.innerText;
+  const value = parseInt(elementText);
+  return value;
+}
+
+function getElementNameById(elementId) {
+  const element = document.getElementById(elementId);
+  const elementText = element.innerText;
+  return elementText;
+}
+
+function setElementValueById(elementId, value) {
+  const element = document.getElementById(elementId);
+  element.innerText = value;
+}
